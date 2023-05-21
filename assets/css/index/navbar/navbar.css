@@ -1,0 +1,66 @@
+@import url("../../index.css");
+
+.navbar {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.navbar a {
+    color: var(--color-secundario);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 500ms ease;
+}
+
+.navbar a:hover {
+    color: var(--color-orange);
+    transform: scale(1.2);
+}
+
+.navbar a.active {
+    color: var(--color-orange);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-secundario);
+}
+
+@media(max-width: 768px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .navbar {
+        gap: 20px;
+    }
+}
+
+@media(max-width: 391px) {
+    .navbar {
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar a {
+        font-size: 0.75rem;
+    }
+}

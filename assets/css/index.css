@@ -1,0 +1,42 @@
+@font-face {
+    font-family: muhaqu;
+    src: url('../fonts/muhaqu.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --color-primario: #121212;
+    --color-secundario: #fdfdfd;
+    --color-teal: #008080;
+    --color-orange: #CC5814;
+    --fuente-primaria: font-family: 'Inter Tight', sans-serif;
+    --fuente-secundaria: font-family: 'Kanit', sans-serif;
+}
+
+::selection {
+    color: #FDFDFD;
+    background: #CC5814;
+}
+
+body {
+    font-family: monospace;
+    min-height: 100vh;
+    max-width: 100vw;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+}
+
+
+section {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}

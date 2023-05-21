@@ -1,0 +1,23 @@
+.header {
+    align-items: center;
+    align-content: center;
+    background: rgba(18, 18, 18, 0.3);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    display: flex;
+    height: 10%;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+
+.header__logo img {
+    height: 70%;
+    width: 60px;
+}
+
+@media screen and (max-width: 391px) {
+    .header__logo img {
+        display: none;
+    }
+}

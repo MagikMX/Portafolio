@@ -1,0 +1,19 @@
+.downArrow {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+}
+
+.downArrow a img {
+    cursor: default;
+    filter: invert(100%) sepia(3%) saturate(7493%) hue-rotate(172deg) brightness(112%) contrast(102%);
+    transition: 0.4s ease-in-out;
+    height: 45px;
+    width: 45px;
+}
+
+.downArrow a img:hover {
+    transform: scale(1.2);
+    transform: translateY(5px);
+}

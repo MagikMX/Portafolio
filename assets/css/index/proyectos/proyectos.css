@@ -1,0 +1,58 @@
+#proyectos {
+    background-color: #CCCCCC;
+    height: 100vh;
+    padding: 1rem;
+    width: 100vw;
+}
+
+#proyectos h1 {
+    border-bottom: 6px solid #CC5814;
+    color: #303030;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.swiper {
+    height: 40rem;
+    border-radius: 15px;
+}
+
+.swiper-slide {
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    filter: invert(12%) sepia(42%) saturate(0%) hue-rotate(265deg) brightness(90%) contrast(82%);
+}
+
+.swiper-pagination {
+    filter: invert(12%) sepia(42%) saturate(0%) hue-rotate(265deg) brightness(90%) contrast(82%);
+}
+
+@media(max-width: 768px) {
+    .swiper-slide img {
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    #proyectos h1 {
+        border-bottom: none;
+    }
+
+    .swiper-slide img {
+        top: 0;
+    }
+}

@@ -1,0 +1,264 @@
+.about {
+    background-color: #cccccc;
+    height: 100vh;
+    max-width: 100vw;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    position: relative;
+    max-width: 90vw;
+}
+
+.about__left {
+    height: 100%;
+    width: 45%;
+}
+
+.about__right {
+    height: 100%;
+    width: 55%;
+}
+
+.left__foto {
+    background-color: #cc5814;
+    border-radius: 5px;
+    height: 80%;
+    left: -6%;
+    margin: 0 auto;
+    position: relative;
+    top: 10%;
+    width: 85%;
+}
+
+.left__foto img {
+    border: 3px solid #cccccc;
+    border-radius: 5px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.right__title {
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.right__body {
+    display: flex;
+    height: 35%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.right__body p {
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.right__body b {
+    font-weight: bolder;
+    color: #CC5815;
+}
+
+.code__container {
+    align-items: center;
+    display: flex;
+    height: 46%;
+    justify-content: center;
+    margin-top: 2%;
+    width: 100%;
+    color: #303030;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.languages {
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(30, 30, 30, 0.8);
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.progress-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.progress-bar {
+    background-color: #b3b3b3;
+    border-radius: 5px;
+    height: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.progress-name {
+    font-weight: 700;
+    font-size: 0.8;
+}
+
+.progress {
+    border-radius: 5px;
+    height: 1rem;
+    width: 0%;
+    background-color: #cc5814;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.05s linear;
+}
+
+.progress-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    left: 0;
+    text-align: center;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+
+#start-btn {
+    background-color: #b3b3b3;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 0.2em solid #b3b3b3;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.20em;
+    text-decoration: none;
+    font-weight: 700;
+    color: #303030;
+    text-align: center;
+    transition: all 0.2s;
+    margin-top: 15px;
+    position: relative;
+    padding: 10px 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#start-btn:hover {
+    border: 0.2em solid #cc5814;
+    background-color: #cc5814;
+    color: #FFFFFF;
+}
+
+.about__soft {
+    background-color: #cccccc;
+    height: 35vh;
+    width: 90vw;
+    position: absolute;
+    top: 106%;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.soft__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about__soft-title {
+    position: absolute;
+    top: -5px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@media(max-width: 768px) {
+    .right__title {
+        font-size: 2rem;
+    }
+
+    .about__left {
+        height: 50%;
+        width: 45%;
+    }
+
+    .right__body {
+        height: 45%;
+        justify-content: space-evenly;
+    }
+
+    .code__container {
+        height: 35%;
+        width: 160%;
+        position: absolute;
+        top: 55%;
+        right: 10%;
+    }
+
+    #start-btn {
+        left: -50%;
+        transform: translate(150%);
+        top: 43%;
+    }
+}
+
+@media screen and (max-width: 391px) {
+    .about__left {
+        display: none;
+    }
+
+    .about__right {
+        position: relative;
+        top: -10px;
+        width: 100%;
+    }
+
+    .right__title {
+        font-size: 1.9rem;
+    }
+
+    .right__body {
+        margin-top: 0;
+    }
+
+    .right__body p {
+        font-size: 0.85rem;
+    }
+
+    .code__container {
+        height: 42%;
+        right: 0;
+        top: 51%;
+        width: 100%;
+    }
+
+    #start-btn {
+        left: 50%;
+        transform: translate(-50%);
+        top: 44%
+    }
+}
