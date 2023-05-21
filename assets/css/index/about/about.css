@@ -224,6 +224,10 @@
         transform: translate(150%);
         top: 43%;
     }
+
+    .progress-bars {
+        gap: 9px;
+    }
 }
 
 @media screen and (max-width: 391px) {
