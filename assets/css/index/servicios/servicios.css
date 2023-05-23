@@ -159,7 +159,7 @@
     }
 }
 
-@media screen and (max-width: 391px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .servicios__titulo {
         height: 15%;
         position: static;

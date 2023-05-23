@@ -85,7 +85,11 @@
     display: none;
 }
 
-@media screen and (max-width: 391px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .hero {
+        top: 35%;
+    }
+
     .hero__span {
         -webkit-text-stroke: 3px #CC5814;
     }
