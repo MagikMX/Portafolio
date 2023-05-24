@@ -36,7 +36,7 @@
 .formacion__container hr {
     background-color: #CC5814;
     border: none;
-    width: 392px;
+    width: 392%;
     height: 6px;
     position: relative;
     outline: none;
@@ -97,7 +97,6 @@
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    .formacion {}
 
     .formacion__titulo hr {
         display: none;

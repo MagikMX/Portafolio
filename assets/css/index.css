@@ -29,15 +29,3 @@ body {
     scroll-snap-type: y mandatory;
     overflow-x: hidden;
 }
-
-
-section {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
-
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
-    * {
-        overflow-x: hidden;
-    }
-}
