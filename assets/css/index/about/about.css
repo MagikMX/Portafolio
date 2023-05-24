@@ -238,6 +238,7 @@
     .about__container {
         top: 2%;
         height: 95%;
+        border: 1px solid blue;
     }
 
     .about__right {
@@ -248,10 +249,14 @@
 
     .right__title {
         font-size: 1.9rem;
+        position: relative;
+        top: 2%;
     }
 
     .right__body {
         margin-top: 0;
+        position: relative;
+        top: 4%;
     }
 
     .right__body p {
@@ -261,7 +266,8 @@
     .code__container {
         height: 42%;
         right: 0;
-        top: 50%;
+        position: relative;
+        top: 6%;
         width: 100%;
     }
 
@@ -272,5 +278,6 @@
     #start-btn {
         left: 50%;
         transform: translate(-50%);
+        top: 8%;
     }
 }

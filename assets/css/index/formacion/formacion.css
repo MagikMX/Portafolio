@@ -115,11 +115,14 @@
     .elementos__superior {
         margin-left: 0.5rem;
         width: 90%;
+        height: 100%;
+        padding: 0;
+
     }
 
     .superior__contenido {
         width: 100%;
-        height: 24%;
+        height: 23%;
         font-size: 0.9rem;
     }
 }
